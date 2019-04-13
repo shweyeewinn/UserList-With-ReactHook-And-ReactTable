@@ -1,0 +1,146 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Custom CSS */
+.header-nav {
+  background-color: #2e7eff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header-nav .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #f0f0f0;
+}
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.navbar-nav .dropdown-item {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  outline: none;
+}
+.footer-bottom {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2e7eff;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer-copyright,
+.footer-copyright a {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.footer-copyright a:hover {
+  color: #f0f0f0;
+}
+.table-content {
+  background-color: white;
+  padding: 20px 0px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.download-btn.btn-secondary {
+  background-color: #2e7eff;
+  outline: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.download-btn.btn-secondary:hover {
+  background-color: #1e6ef0;
+}
+
+.download-btn.btn-secondary:not(:disabled):not(.disabled):active,
+.download-btn.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .download-btn.btn-secondary.dropdown-toggle {
+  background-color: #1e6ef0;
+  outline: none;
+  border: none;
+}
+.ReactTable {
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+}
+.table-content .ReactTable .rt-thead .rt-th,
+.table-content .ReactTable .rt-thead .rt-td {
+  padding: 12px 5px;
+}
+.table-content .ReactTable .rt-thead .rt-resizable-header-content {
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  color: #434343;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.table-content .ReactTable .rt-td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  color: #000000;
+  padding: 10px 15px;
+}
+.ReactTable * {
+  font-family: 'Montserrat', sans-serif;
+}
+.ReactTable .-pagination * {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+.table-content .ReactTable .-pagination .-btn:not([disabled]):hover {
+  background: #2e7eff;
+}
+
+/* End of Custom CSS */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
