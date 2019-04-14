@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import ReactTable from 'react-table';
-import 'react-table/react-table.css';
-import { Container, Row, Col, Button } from 'reactstrap';
 import axios from 'axios';
-// import * as moment from 'moment';
+import ReactTable from 'react-table';
+import { CSVLink } from 'react-csv';
+import { Container, Row, Col, Button } from 'reactstrap';
+
+import 'react-table/react-table.css';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -49,15 +50,18 @@ export default function TableContent() {
       accessor: 'age'
     }
   ];
+
   return (
     <React.Fragment>
       <section className="table-content">
         <Container>
           <Row>
             <Col sm="12" md="12" lg="12" style={{ paddingBottom: 20 }}>
-              <Button className="download-btn" size="lg">
-                Download
-              </Button>
+              <CSVLink data={logs}>
+                <Button className="download-btn" size="lg">
+                  Download
+                </Button>
+              </CSVLink>
             </Col>
           </Row>
           <Row>
