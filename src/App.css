@@ -31,7 +31,7 @@
   width: 100%;
   z-index: 99;
 }
-.header-nav .navbar-brand {
+.header-nav .navbar-light .navbar-brand {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
   font-size: 1.3rem;
@@ -39,11 +39,11 @@
   font-weight: bold;
   line-height: 2rem;
 }
-.navbar-brand:hover,
-.nav-link:hover {
+.header-nav .navbar-light .navbar-brand:hover,
+.header-nav .navbar-light .navbar-nav .nav-link:hover {
   color: #f0f0f0;
 }
-.nav-link {
+.header-nav .navbar-light .navbar-nav .nav-link {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 0.9rem;
@@ -134,6 +134,12 @@
 }
 .table-content .ReactTable .-pagination .-btn:not([disabled]):hover {
   background: #2e7eff;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav.justify-content-center.navbar {
+    justify-content: space-between !important;
+  }
 }
 
 /* End of Custom CSS */

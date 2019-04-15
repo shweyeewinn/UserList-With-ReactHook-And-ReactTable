@@ -41,6 +41,7 @@ export default class NavBar extends React.Component {
                 expand="xl"
                 className="justify-content-center"
                 style={{ paddingLeft: 0, paddingRight: 0 }}
+                light
               >
                 <NavbarBrand href="/">Delivery</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
